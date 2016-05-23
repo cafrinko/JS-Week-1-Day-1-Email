@@ -10,16 +10,10 @@ exports.Message.prototype.read = function(){
 }
 
 exports.Message.prototype.encode = function(){
-  var wordArray = this.messageText.split(" ");
-  for(var i = 0; i < wordArray.length; i++){
-    var splitWord = wordArray[i].split("");
-    var letterArray = [];
-    letterArray.push(splitWord);
-  };
-  for (var j = 0; j < letterArray.length; j++){
-    var almostReverse = letterArray[j].reverse();
-    var reverseLetterArray = [];
-    reverseLetterArray.push(almostReverse);
-    console.log(reverseLetterArray);
-  }
-  };
+  //split message into letters;
+  //reverse letters;
+  //join letters;
+  //split letters by spaces;
+  //join letters by spaces;
+  return this.messageText.split("").reverse().join("").split(" ").join(" ");
+};

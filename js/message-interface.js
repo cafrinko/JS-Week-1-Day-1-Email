@@ -10,7 +10,7 @@ $(document).ready(function(){
     console.log(newMessage.read());
     console.log(newMessage.encode());
 
-    $('#emailMessage').text(newMessage.read());
+    $('#emailMessage').text(newMessage.encode());
     $('#message').show();
   });
 });

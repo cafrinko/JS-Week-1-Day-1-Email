@@ -11,7 +11,7 @@ $(document).ready(function(){
     console.log(newMessage.read());
     console.log(newMessage.encode());
 
-    $('#emailMessage').text(newMessage.read());
+    $('#emailMessage').text(newMessage.encode());
     $('#message').show();
   });
 });
@@ -29,17 +29,12 @@ exports.Message.prototype.read = function(){
 }
 
 exports.Message.prototype.encode = function(){
-  var wordArray = this.messageText.split(" ");
-  for(var i = 0; i < wordArray.length; i++){
-    var splitWord = wordArray[i].split("");
-    var letterArray = [];
-    letterArray.push(splitWord);
-    console.log(letterArray);
-  };
-  for (var j = 0; j < letterArray.length; j++){
-    var reverseLetterArray = [];
-    letterArray[j].reverse();
-  }
-  };
+  //split message into letters;
+  //reverse letters;
+  //join letters;
+  //split letters by spaces;
+  //join letters by spaces;
+  return this.messageText.split("").reverse().join("").split(" ").join(" ");
+};
 
 },{}]},{},[1]);
