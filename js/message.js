@@ -8,3 +8,8 @@ exports.Message = function(to, from, subject, messageText){
 exports.Message.prototype.read = function(){
   return "Dear " + this.to + ", This is an email regarding: " + this.subject + ". " + this.messageText + " Yours truly, " + this.from;
 }
+
+// exports.Message.prototype.encode = function(){
+//   var array = Message.read().split();
+//   console.log(array);
+// }

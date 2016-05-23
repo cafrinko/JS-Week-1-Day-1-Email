@@ -10,6 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "browserify": "^13.0.1",
-    "prompt": "^1.0.0"
+    "gulp": "^3.9.1",
+    "prompt": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
