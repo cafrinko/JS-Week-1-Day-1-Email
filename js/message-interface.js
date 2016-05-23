@@ -1,6 +1,5 @@
 var Message = require('./../js/message.js').Message;
 $(document).ready(function(){
-  debugger;
   $('#email').submit(function(event){
     event.preventDefault();
     var toField = $('#to').val();
@@ -9,6 +8,7 @@ $(document).ready(function(){
     var messageField = $('#messageInput').val();
     var newMessage = new Message(toField, fromField, subjectField, messageField);
     console.log(newMessage.read());
+    console.log(newMessage.encode());
 
     $('#emailMessage').text(newMessage.read());
     $('#message').show();
